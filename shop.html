@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shop | Project Eco Paws</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+<style>
+  /* Base styles & resets */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    background-color: #f4f9f6;
+    color: #2e3d34;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    text-decoration: none;
+    color: #2e3d34;
+  }
+  a:hover {
+    color: #4ba87d;
+  }
+
+  /* Navigation */
+  nav {
+    background-color: #4ba87d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav .logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 2px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  nav ul li a {
+    font-weight: 500;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: #d1ead6;
+    border-bottom: 2px solid #d1ead6;
+    padding-bottom: 3px;
+  }
+
+  /* Intro Section */
+  section.intro {
+    padding: 4rem 5rem 2rem 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  section.intro h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #3a6a43;
+  }
+  section.intro p {
+    font-size: 1.1rem;
+    max-width: 850px;
+    margin: 0 auto 3rem auto;
+    color: #506c4e;
+    line-height: 1.7;
+  }
+
+  /* Product Features */
+  .products {
+    max-width: 1100px;
+    margin: 0 auto 5rem auto;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .product {
+    background: white;
+    flex: 1 1 45%;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(75,168,125,0.15);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product:hover {
+    box-shadow: 0 12px 35px rgba(75,168,125,0.35);
+  }
+  .product img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  .product h3 {
+    margin-bottom: 1rem;
+    color: #4ba87d;
+  }
+  .product p {
+    font-size: 1rem;
+    color: #506c4e;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .product ul {
+    list-style: disc inside;
+    margin-bottom: 1rem;
+    color: #506c4e;
+  }
+
+  /* Impact Section */
+  .impact {
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+  }
+  .impact h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #3a6a43;
+  }
+  .impact p {
+    font-size: 1.1rem;
+    color: #506c4e;
+    line-height: 1.7;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #4ba87d;
+    color: white;
+    padding: 2rem 3rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  footer a {
+    color: #d1ead6;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    nav ul {
+      gap: 1rem;
+    }
+    .products {
+      flex-direction: column;
+      gap: 3rem;
+      padding: 0 1rem;
+    }
+    section.intro {
+      padding: 2rem 1rem 1rem 1rem;
+    }
+    .impact {
+      padding: 0 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Primary navigation">
+  <div class="logo">Project Eco Paws</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html" class="active" aria-current="page">Shop</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="intro" aria-labelledby="shop-heading">
+  <h2 id="shop-heading">Explore Our Eco-Friendly Products</h2>
+  <p>
+    All our products are made from recycled climbing rope, ensuring durability and sustainability. Below are our main offerings with detailed descriptions and prices.
+  </p>
+</section>
+
+<section class="products" aria-label="Shop products">
+
+  <article class="product" aria-labelledby="toy-title">
+    <img src="images/monkeyknot.jpg" alt="Monkey knot dog toy made of recycled rope" />
+    <h3 id="toy-title">Monkey Knot Dog Toys - $20</h3>
+    <p>Our primary line of dog toys includes monkey knots crafted from recycled climbing rope. Designed for dogs of all sizes, these toys are tough enough for the most enthusiastic chewers and promote healthy teeth and gums through natural tugging.</p>
+    <ul>
+      <li>Sizes available: Small, Medium, Large</li>
+      <li>Colors: Natural beige with subtle dyed options</li>
+      <li>Eco-friendly, non-toxic materials</li>
+    </ul>
+  </article>
+
+  <article class="product" aria-labelledby="leash-title">
+    <img src="images/leash.jpg" alt="Dog leash made of recycled climbing rope" />
+    <h3 id="leash-title">Recycled Climbing Rope Leashes - $15</h3>
+    <p>Available in a range of sizes, our leashes provide both strength and style. Each leash is made from repurposed climbing rope that is both eco-friendly and incredibly robust, suitable for all dog breeds.</p>
+    <ul>
+      <li>Length options: 4ft, 6ft, 8ft</li>
+      <li>Colors: Natural and dyed variations</li>
+      <li>5% proceeds donated to <a href="https://4ocean.com" target="_blank" rel="noopener noreferrer">4Ocean</a></li>
+    </ul>
+  </article>
+
+</section>
+
+<section class="impact" aria-labelledby="impact-heading">
+  <h2 id="impact-heading">Our Impact So Far</h2>
+  <p>With over <strong>3,000 sales</strong>, Project Eco Paws is proud to have contributed meaningfully to sustainable pet products and environmental causes. Every purchase helps reduce plastic waste and supports ocean cleanups.</p>
+</section>
+
+<footer role="contentinfo">
+  <p>&copy; 2025 Project Eco Paws &mdash; Founded by Kelly Chesnut</p>
+  <p>
+    Follow us on 
+    <a href="https://instagram.com/projectecopaws" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+    <a href="https://facebook.com/projectecopaws" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+    <a href="https://twitter.com/ecopaws" target="_blank" rel="noopener noreferrer">Twitter</a>
+  </p>
+  <p>5% of all proceeds are donated to <a href="https://4ocean.com" target="_blank" rel="noopener noreferrer" style="color:#d1ead6;">4Ocean</a> to help clean our oceans.</p>
+</footer>
+
+</body>
+</html>
