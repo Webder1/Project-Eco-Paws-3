@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About Us | Project Eco Paws</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    background-color: #f4f9f6;
+    color: #2e3d34;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    text-decoration: none;
+    color: #2e3d34;
+  }
+  a:hover {
+    color: #4ba87d;
+  }
+
+  /* Navigation */
+  nav {
+    background-color: #4ba87d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav .logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 2px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  nav ul li a {
+    font-weight: 500;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: #d1ead6;
+    border-bottom: 2px solid #d1ead6;
+    padding-bottom: 3px;
+  }
+
+  /* Main Content */
+  main {
+    max-width: 1000px;
+    margin: 3rem auto 4rem auto;
+    padding: 0 2rem;
+  }
+  h1, h2 {
+    color: #3a6a43;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.1rem;
+    color: #506c4e;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+  strong {
+    color: #2e3d34;
+  }
+  img.founder-photo {
+    float: right;
+    max-width: 300px;
+    border-radius: 15px;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 20px rgba(75,168,125,0.3);
+  }
+  .mission-statement {
+    background-color: #d1ead6;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(75,168,125,0.2);
+  }
+  .section-divider {
+    height: 3px;
+    width: 100%;
+    background-color: #4ba87d;
+    margin: 3rem 0;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #4ba87d;
+    color: white;
+    padding: 2rem 3rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  footer a {
+    color: #d1ead6;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    main {
+      padding: 0 1rem;
+      margin: 2rem auto 3rem auto;
+    }
+    img.founder-photo {
+      float: none;
+      display: block;
+      margin: 0 auto 2rem auto;
+      max-width: 80%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Primary navigation">
+  <div class="logo">Project Eco Paws</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html" class="active" aria-current="page">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main role="main">
+  <h1>About Project Eco Paws</h1>
+  
+  <img src="images/founder.jpg" alt="Kelly Chesnut, founder of Project Eco Paws" class="founder-photo" />
+
+  <p>
+    Founded by <strong>Kelly Chesnut</strong>, Project Eco Paws began with a simple yet powerful vision: to create dog toys and leashes that are as kind to the planet as they are fun for our furry friends.
+  </p>
+  <p>
+    Kelly, a lifelong animal lover and outdoor enthusiast, was inspired by the harmful impact of plastic waste on nature, especially our oceans. Determined to make a difference, Kelly combined her passion for sustainability with her love for dogs, launching Project Eco Paws with the mission to design durable, eco-friendly pet products using recycled materials.
+  </p>
+
+  <div class="mission-statement" aria-label="Company Mission Statement">
+    <h2>Our Mission</h2>
+    <p>
+      At Project Eco Paws, we are dedicated to crafting dog toys and leashes that leave a minimal environmental footprint without compromising on quality or durability. We prioritize using recycled climbing rope and other sustainable materials to create products that stand up to the most enthusiastic dogs. Our commitment extends beyond products — 5% of our proceeds support <a href="https://4ocean.com" target="_blank" rel="noopener noreferrer">4Ocean</a>, an organization devoted to ocean cleanup.
+    </p>
+  </div>
+
+  <div class="section-divider" aria-hidden="true"></div>
+
+  <h2>Why Sustainability Matters to Us</h2>
+  <p>
+    Plastic pollution and waste pose significant threats to wildlife, ecosystems, and ultimately, our health. Pet toys and accessories are often made from non-biodegradable materials that contribute to landfill overflow and ocean contamination. By choosing recycled climbing rope, we not only repurpose materials that might otherwise go to waste but also reduce the demand for new plastics.
+  </p>
+  <p>
+    We believe every small choice counts. By making sustainable pet products accessible and affordable, we encourage pet owners to make environmentally friendly choices without sacrificing fun or durability.
+  </p>
+
+  <div class="section-divider" aria-hidden="true"></div>
+
+  <h2>Meet Kelly Chesnut</h2>
+  <p>
+    Kelly’s journey into sustainable pet product creation started with her own dog, Scout, who loved to chew and tug relentlessly on toys. Frustrated with the waste generated by cheaply made pet products, Kelly began experimenting with recycled materials sourced from climbing gear she used during her outdoor adventures. What started as a personal project soon grew into Project Eco Paws, now proudly supporting thousands of happy pups and a healthier planet.
+  </p>
+  <p>
+    When not innovating with eco-friendly designs, Kelly spends her time hiking, volunteering for environmental causes, and advocating for sustainable living.
+  </p>
+
+  <div class="section-divider" aria-hidden="true"></div>
+
+  <h2>Our Vision for the Future</h2>
+  <p>
+    We are continuously exploring new sustainable materials and partnerships to expand our product range while deepening our positive environmental impact. With your support, Project Eco Paws aims to become a leading brand in eco-conscious pet accessories, inspiring a global community of mindful pet owners.
+  </p>
+  <p>
+    Thank you for being part of this journey toward a greener, happier world for pets and people alike.
+  </p>
+</main>
+
+<footer role="contentinfo">
+  <p>&copy; 2025 Project Eco Paws &mdash; Founded by Kelly Chesnut</p>
+  <p>
+    Follow us on 
+    <a href="https://instagram.com/projectecopaws" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+    <a href="https://facebook.com/projectecopaws" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+    <a href="https://twitter.com/ecopaws" target="_blank" rel="noopener noreferrer">Twitter</a>
+  </p>
+  <p>5% of all proceeds are donated to <a href="https://4ocean.com" target="_blank" rel="noopener noreferrer" style="color:#d1ead6;">4Ocean</a> to help clean our oceans.</p>
+</footer>
+
+</body>
+</html>
